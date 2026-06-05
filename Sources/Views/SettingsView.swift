@@ -760,6 +760,6 @@ struct SettingsView: View {
 
     private static func windowCaption(_ w: WindowUsage) -> String {
         if let err = w.error, w.percentInt == 0 { return "⚠ \(err)" }
-        return "\(w.percentInt)%"
+        return "\(w.remainingPercentInt)%"
     }
 }

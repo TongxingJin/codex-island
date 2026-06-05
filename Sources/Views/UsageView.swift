@@ -148,7 +148,7 @@ struct ChartTile: View {
     private static let tileHeight: CGFloat = 96
 
     var body: some View {
-        let value = window.usedPercent * 100   // 0-100
+        let value = window.remainingPercent * 100   // 0-100
         let sub = subCaption()
         let label = L10n.tr(labelKey)
 
